@@ -1,10 +1,13 @@
-# Third-party notice
+# Third-party notices
 
-`rules/ads.json` contains ad-server domains taken from the **EasyList** project
-(`easylist_adservers.txt`, https://github.com/easylist/easylist) and converted into
-Chrome declarativeNetRequest format.
+## EasyList
+`rules/ads.json` (browser extension) and `android/app/src/main/assets/filters.txt` (Android app)
+are built from EasyList filters (https://github.com/easylist/easylist), converted to each
+platform's format. EasyList is dual-licensed under GPLv3 and Creative Commons BY-SA 3.0.
+The MIT license in `LICENSE` covers this project's own source code. The filter data stays under
+the EasyList license terms. Check the EasyList repository for the current license text before
+redistributing.
 
-EasyList is dual-licensed under GPLv3 and Creative Commons BY-SA 3.0. The MIT license in
-`LICENSE` covers the extension's own source code. The EasyList-derived data in
-`rules/ads.json` remains under the EasyList license terms. Please check the EasyList
-repository for the current license text before redistributing.
+## adblock-rust (Brave)
+The Android Rust core uses the `adblock` crate (https://github.com/brave/adblock-rust),
+licensed under MPL-2.0. It is used as an unmodified dependency.
